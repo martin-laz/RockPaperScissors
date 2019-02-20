@@ -1,0 +1,95 @@
+/*Overall layout*/
+
+body {
+    font-family: 'Lato', Verdana, Arial, sans-serif;
+
+    max-width: 100vw;
+    min-height: 100vh;
+    padding: 50px;
+}
+
+p {
+    font-size: 24px;
+    letter-spacing: 1px;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+section {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+section.header,.score {
+    margin: 20px 20px;
+    text-align: center;
+}
+.game h2 {
+    margin: 20px 20px;
+    text-align: center
+}
+ section.header h1 {
+     font-size: 52px;
+ }
+
+ section.header h2 {
+     font-size: 32px;
+ }
+
+
+/*Form styling*/
+
+  .rps_input {
+    display: flex;
+    justify-content: center;
+    margin : 90px 30px;
+  }
+
+  form input[name="user_choice"] {
+    opacity: 0;
+    height: 210px;
+    outline: none;
+  }
+
+  form label {
+    cursor: pointer;
+    margin: 0 100px;
+  }
+  form img {
+    height: 300px;
+  }
+
+
+
+
+  .bet_input {
+    width: 200px;
+    margin: 20px auto;
+    border-radius: 10px;
+    overflow: hidden;
+    display: block;
+    text-align: center;
+  }
+
+  .bet_input input {
+    position: absolute;
+    visibility: hidden;
+    display: none;
+  }
+
+  .bet_input label {
+    font-size: 18px;
+    display: inline-block;
+    cursor: pointer;
+    font-weight: bold;
+    padding: 5px 20px;
+  }
+
+  .bet_input input[type=radio]:checked + label{
+    color: firebrick;
+    background: $fg;
+  }
